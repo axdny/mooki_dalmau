@@ -1,0 +1,89 @@
+:root {
+  --first-color: #e3b8bf;
+  --first-alpha-color: rgba(227, 184, 191, 0.8);
+  --second-color: #cb7c89;
+  --gray-color: #ccc;
+  --white-alpha-color: #ffffff80;
+  --black-alpha-color: #00000080;
+  --font: "Raleway", sans-serif;
+  --max-width: 1200px;
+}
+
+body {
+  box-sizing: border-box;
+  font-family: var(--font);
+  font-size: 16px;
+  scroll-behavior: smooth;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+
+.principal-color {
+  background-color: var(--first-color);
+}
+
+/* - - - - - - - - - - HERO IMAGE - - - - - - - - - - */
+
+.hero-image {
+  background-image: url(../assets/logo.jpeg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+
+.hero-image--opacity {
+  min-height: 88vh;
+  background-color: var(--black-alpha-color);
+}
+
+.hero-image--title {
+  font-size: 7.5vw;
+}
+
+/* - - - - - - - - - - - CARDS - - - - - - - - - - - */
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(1, 100%);
+}
+
+.card {
+  width: 250px;
+}
+
+.btn,
+.btn:hover {
+  background-color: var(--first-color);
+  border-color: var(--first-color);
+  color: var(--black-alpha-color);
+}
+
+.btn:hover,
+.btn:active,
+.btn:focus {
+  background-color: var(--first-alpha-color);
+  border-color: var(--first-color);
+}
+
+/* - - - - - - - - - MEDIA QUERIES - - - - - - - - - */
+
+@media all and (min-width: 576px) {
+  .hero-image--opacity {
+    min-height: 87vh;
+  }
+
+  .container {
+    grid-template-columns: repeat(2, 50%);
+    margin: 0 1rem;
+  }
+}
+
+@media all and (min-width: 992px) {
+  .container {
+    grid-template-columns: repeat(3, 33.33333%);
+  }
+}
