@@ -39,42 +39,59 @@
       </ul>
     </div>
   </header>
-  <section class="hero-image">
-    <aside class="hero-image--opacity">
+  <main class="hero-image principal-color">
+    <div class="hero-image--opacity d-flex justify-content-center align-items-center text-center w-100">
       <div class="hero-image--content">
-        <h2 class="hero-image--title">
+        <h2 class="hero-image--title text-white fw-bold pb-1">
           Panadería
         </h2>
-        <h3>Todos los pedidos se solicitan con 72 hs. de anticipacion <b>SIN EXCEPCIÓN</b></h3>
-        <div class="slider-container">
-          <div class="slider">
-            <div class="slides">
-              <div id="slides-1" class="slide">
-                <img class="slides-image" src="./assets/panaderia01.png"/>
+        <div class="slider-container d-flex align-items-center justify-content-center h-100">
+          <div class="slider w-100 text-center overflow-hidden position-relative">
+            <div class="slides d-flex position-relative">
+              <div id="slides-1" class="slide d-flex justify-content-center align-items-center w-100">
+                <img class="slides-image w-100 h-100" src="./assets/panaderia01.png" />
                 <a class="slide-prev" href="#slides-4" title="Next"></a>
                 <a class="slide-next" href="#slides-2" title="Next"></a>
               </div>
-              <div id="slides-2" class="slide">
-                <img class="slides-image" src="./assets/panaderia02.png" />
+              <div id="slides-2" class="slide d-flex justify-content-center align-items-center w-100">
+                <img class="slides-image w-100 h-100" src="./assets/panaderia02.png" />
                 <a class="slide-prev" href="#slides-1" title="Prev"></a>
                 <a class="slide-next" href="#slides-3" title="Next"></a>
               </div>
-              <div id="slides-3" class="slide">
-                <img class="slides-image" src="./assets/panaderia03.png" />
+              <div id="slides-3" class="slide d-flex justify-content-center align-items-center w-100">
+                <img class="slides-image w-100 h-100" src="./assets/panaderia03.png" />
                 <a class="slide-prev" href="#slides-2" title="Prev"></a>
                 <a class="slide-next" href="#slides-4" title="Next"></a>
               </div>
-              <div id="slides-4" class="slide">
-                <img class="slides-image" src="./assets/panaderia04.png" />
+              <div id="slides-4" class="slide d-flex justify-content-center align-items-center w-100">
+                <img class="slides-image w-100 h-100" src="./assets/panaderia04.png" />
                 <a class="slide-prev" href="#slides-3" title="Prev"></a>
                 <a class="slide-next" href="#slides-1" title="Prev"></a>
               </div>
             </div>
           </div>
         </div>
+
       </div>
-    </aside>
-  </section>
+    </div>
+    </div>
+    <div class="modal fade" id="modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="modal"></h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            Producto no disponible temporalmente.
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
   <footer class="text-center text-lg-start principal-color">
     <div class="text-center text-black fw-bold p-1">
       © 2022 Sitio creado por
@@ -84,7 +101,8 @@
     </div>
   </footer>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+    crossorigin="anonymous"></script>
 </body>
 
 </html>
