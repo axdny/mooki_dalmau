@@ -1,0 +1,17 @@
+@import "utilities/variables";
+
+.hero-image {
+  background-image: url(../assets/logo.jpeg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+
+.hero-image--opacity {
+  min-height: 88vh;
+  background-color: $black-alpha-color;
+}
+
+.hero-image--title {
+  font-size: 7.5vw;
+}

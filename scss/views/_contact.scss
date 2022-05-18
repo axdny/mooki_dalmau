@@ -1,0 +1,24 @@
+.contact-form {
+  display: grid;
+  grid-template-columns: repeat(1, minmax(150px, 1fr));
+  margin: 2rem auto;
+  input,
+  textarea {
+    font-size: 0.85rem;
+    resize: none;
+  }
+}
+
+.contact-form > * {
+  padding: 0.5rem;
+  margin: 1rem auto;
+  display: block;
+  width: 100%;
+  &:focus {
+    outline: none;
+  }
+}
+
+.contact-form *::placeholder {
+  color: grey;
+}
