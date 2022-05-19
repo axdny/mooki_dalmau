@@ -1,6 +1,3 @@
-# Created by https://www.gitignore.io/api/visualstudiocode
-# Edit at https://www.gitignore.io/?templates=visualstudiocode
-
 ### VisualStudioCode ###
 .vscode/*      # Maybe .vscode/**/* instead - see comments
 !.vscode/settings.json
@@ -11,6 +8,6 @@
 ### VisualStudioCode Patch ###
 # Ignore all local history of files
 **/.history
-**/node_modules
 
-# End of https://www.gitignore.io/api/visualstudiocode
+### Node Modules ###
+**/node_modules
