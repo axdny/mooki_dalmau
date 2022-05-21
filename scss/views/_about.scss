@@ -1,5 +1,15 @@
-@media all and (min-width: 992px) {
-    .about {
-    padding: 1rem;
+.about {
+  @media all and (max-width: 767px) {
+    flex-direction: column-reverse;
+    span {
+      display: block;
+    }
+  }
+  @media all and (min-width: 767px) {
+    max-width: 80%;
+    align-items: center;
+    margin: auto;
+    padding-top: 2rem;
   }
 }
+

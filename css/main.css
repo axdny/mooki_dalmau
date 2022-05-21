@@ -144,6 +144,15 @@ a.slide-next,
 .contact-form *::placeholder {
   color: grey; }
 
-@media all and (min-width: 992px) {
+@media all and (max-width: 767px) {
   .about {
-    padding: 1rem; } }
+    flex-direction: column-reverse; }
+    .about span {
+      display: block; } }
+
+@media all and (min-width: 767px) {
+  .about {
+    max-width: 80%;
+    align-items: center;
+    margin: auto;
+    padding-top: 2rem; } }
