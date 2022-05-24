@@ -1,0 +1,20 @@
+@import "utilities/variables";
+
+.btn {
+  background-color: $first-color;
+  border-color: $first-color;
+  &:hover,
+  &:active,
+  &:focus {
+    box-shadow: $first-alpha-color;
+    background-color: $first-color;
+    color: $black-alpha-color;
+    border-color: $first-color;
+    outline: none !important;
+  }
+}
+
+.btn-contact-form {
+  @extend .btn;
+  border-radius: .75rem;
+}

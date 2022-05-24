@@ -1,4 +1,4 @@
-.slider {
+/*.slider {
   max-width: 600px;
   height: 400px;
   margin: 20px;
@@ -53,4 +53,12 @@ a.slide-next,
   z-index: 1;
   background: none;
   pointer-events: none;
+}*/
+
+.carousel {
+  max-width: 74%;
+  margin: 0 auto;
+  @media all and (min-width: 992px) {
+    max-width: 25%;
+  }
 }
