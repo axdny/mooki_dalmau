@@ -14,9 +14,9 @@
   background-position: center; }
 
 .hero-image--opacity {
-  min-height: 86vh;
+  min-height: 88vh;
   background-color: #00000080; }
-  @media all and (min-width: 576px) {
+  @media all and (min-width: 972px) {
     .hero-image--opacity {
       min-height: 87vh; } }
 

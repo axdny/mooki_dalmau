@@ -8,9 +8,9 @@
 }
 
 .hero-image--opacity {
-  min-height: 86vh;
+  min-height: 88vh;
   background-color: $black-alpha-color;
-  @media all and (min-width: 576px) {
+  @media all and (min-width: 972px) {
     min-height: 87vh;
   }
 }
