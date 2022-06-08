@@ -17,7 +17,7 @@
 </head>
 
 
-<body>
+<body class="d-flex flex-column min-vh-100">
   <header class="navbar sticky-top navbar-expand-md navbar-dark principal-color">
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu" aria-label="menu">
       <span class="navbar-toggler-icon"></span>
@@ -51,11 +51,10 @@
         <h3 class="text-white">Déjanos tus comentarios y nos estaremos comunicando a la brevedad.</h3>
         <form class="contact-form p-2">
           <input class="border-0" type="text" name="name" placeholder="Ingresa tu nombre *"
-            title="Nombre sólo acepta letras y espacios en blanco" pattern="^[A-Za-zÑñÁáÉéÍíÓóÚúÜü\s]+$" required>
-          <input class="border-0" type="email" name="email" placeholder="Ingresa tu correo *" title="Email incorrecto"
-            pattern="^[a-z0-9]+(\.[_a-z0-9]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,15})$" required>
+            title="Nombre sólo acepta letras y espacios en blanco" aria-label="name" required>
+          <input class="border-0" type="email" name="email" placeholder="Ingresa tu correo *" aria-label="mail" required>
           <textarea name="comments" cols="50" rows="10" placeholder="Déjame tus comentarios *" required></textarea>
-          <button type="button" class="btn btn-primary btn-contact-form" data-bs-toggle="modal" data-bs-target="#modal">
+          <button type="button" class="btn btn-primary btn-contact-form" data-bs-toggle="modal" data-bs-target="#modal" aria-label="send">
             Enviar
           </button>
         </form>
@@ -77,7 +76,7 @@
         </div>
       </div>
   </main>
-  <footer class="text-center text-lg-start principal-color">
+  <footer class="text-center text-lg-start principal-color mt-auto">
     <div class="text-center text-black fw-bold p-1">
       © 2022 Sitio creado por
       <a class="text-black text-decoration-none" href="https://axdny.github.io/CV/" target="_blank"

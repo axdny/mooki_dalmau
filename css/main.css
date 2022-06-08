@@ -67,13 +67,8 @@ hr {
 
 .carousel {
   max-width: 74%;
-  margin: 0 auto; }
-  @media all and (min-width: 992px) {
-    .carousel {
-      max-width: 50%; }
-      .carousel .carousel-images {
-        height: 500px;
-        width: 500px; } }
+  margin: 0 auto;
+  width: 400px; }
 
 .contact-form {
   display: grid;

@@ -1,11 +1,5 @@
 .carousel {
   max-width: 74%;
   margin: 0 auto;
-  @media all and (min-width: 992px) {
-    max-width: 50%;
-    .carousel-images {
-      height: 500px;
-      width: 500px;
-    }
-  }
+  width: 400px;
 }
